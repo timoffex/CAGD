@@ -51,10 +51,10 @@ int main()
   };
 
   cout << "Original points:" << endl;
-  cout << reparameterized[0] << endl
-       << reparameterized[1] << endl
-       << reparameterized[2] << endl
-       << reparameterized[3] << endl;
+  cout << points[0] << endl
+       << points[1] << endl
+       << points[2] << endl
+       << points[3] << endl;
 
   cout << "deCasteljau on original points with t = 0.0, 0.25, 0.7, 1.0" << endl;
   cout << Bezier::deCasteljau(points, 0) << endl;
@@ -75,7 +75,7 @@ int main()
     Bezier::blossom(points, {0, 0.5, 0.5}),
     Bezier::blossom(points, {0.5, 0.5, 0.5})
   };
-  
+
   cout << reparameterized[0] << endl
        << reparameterized[1] << endl
        << reparameterized[2] << endl

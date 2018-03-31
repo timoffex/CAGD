@@ -13,7 +13,8 @@ in the `geometry/bezier/deCasteljau.h` header (named after the de Casteljau algo
 which occurs in every function in this header).
 
 The `src/main.cpp` file currently includes some basic tests for the `Bezier` namespace.
-This file may be compiled with the following command from the root directory:
+This file may be compiled with the following command from the root directory (note:
+you may need to create the bin/ directory manually first):
 ```
   g++ -std=c++1z src/main.cpp -o bin/test
 ```

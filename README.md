@@ -12,11 +12,13 @@ There is a `Geometry` namespace. Inside it is the `Bezier` namespace, which is d
 in the `geometry/bezier/deCasteljau.h` header (named after the de Casteljau algorithm,
 which occurs in every function in this header).
 
-The `src/main.cpp` file currently includes some basic tests for the `Bezier` namespace.
-This file may be compiled with the following command from the root directory (note:
+This project can be compiled with Qt. I use Qt Creator, so it is done automatically for me, but you can probably use the `qmake` command on the .pro file manually.
+
+The `src/test_main.cpp` file currently includes some basic tests for the `Bezier` namespace.
+This file may be compiled manually with the following command from the root directory (note:
 you may need to create the bin/ directory manually first):
 ```
-  g++ -std=c++1z src/main.cpp -o bin/test
+  g++ -std=c++1z src/test_main.cpp -o bin/test
 ```
 
 The -std=c++1z option is necessary because I use the
